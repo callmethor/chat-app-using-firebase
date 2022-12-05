@@ -23,6 +23,8 @@
   background: var(--color-blue);
   align-self: flex-end;
   text-align: right;
+  word-break: break-word;
+  max-width: 65%;
 }
 
 .sender {

@@ -17,11 +17,11 @@ function MessageList({ roomId }) {
     return (
         <div className="message-list-container" ref={containerRef}>
             <ul className="message-list">
-                {messages.map((x) => (
+                {messages.map((message) => (
                     <Message
-                        key={x.id}
-                        message={x}
-                        isOwnMessage={x.uid === user.uid}
+                        key={message.id}
+                        message={message}
+                        isOwnMessage={message.uid === user.uid}
                     />
                 ))}
             </ul>
